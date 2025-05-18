@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.5-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/all.min.css" />
+  </head>
+
+  <body>
+    <div
+      class="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center"
+    >
+      <div
+        class="w-100 h-50 d-flex align-items-center justify-content-evenly flex-column"
+      >
+        <h1 class="fw-bolder fst-italic">Quote of the Day</h1>
+
+        <p class="fs-1 fw-bolder fst-italic">
+          Press the button below to recieve a random quote!
+        </p>
+        <button
+          onclick="loopindex()"
+          class="btn btn-outline-dark w-25 p-3 mb-5 fs-1 fw-bolder"
+        >
+          click
+        </button>
+      </div>
+
+      <div
+        class="w-75 h-50 d-flex flex-column justify-content-between align-items-center"
+      >
+        <div
+          id="pointer"
+          class="d-flex  text-black fs-2 fw-bolder text-center fst-italic"
+        ></div>
+      </div>
+    </div>
+
+    <script src="./bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.3.5-dist/js/all.min.js"></script>
+    <script src="./mini.js"></script>
+  </body>
+</html>
