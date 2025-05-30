@@ -51,7 +51,7 @@ function displayUrls() {
         printContainer.innerHTML += `
         <ul class="list-unstyled  li-1  d-grid text-center ">
             <li>${i + 1}</li>
-            <li class="fw-bold">${storedUrls[i].name}</li>
+            <li class="fw-bold text-break">${storedUrls[i].name}</li>
             <li><a class="btn btn-success" href="${storedUrls[i].url}" target="_blank"><i class="fa-regular fa-eye"></i> Visit</a></li>
             <li><button class="btn delete-btn btn-danger" onclick="confirmDelete(${i})"><i class="fa-solid fa-trash"></i> Delete</button></li>
             <li><button class="btn  btn-primary " onclick="prepareUpdate(${i})"><i class="fa-solid fa-pen-to-square"></i> Update</button></li>
@@ -130,6 +130,9 @@ cancelUpdate.addEventListener("click",function(){
 updateButton.classList.replace("d-flex", "d-none");
     cancelUpdate.classList.replace("d-flex", "d-none");
     addButton.classList.remove("d-none");
+      document.querySelectorAll(".delete-btn").forEach(function(btn) {
+        btn.disabled = false;
+    });
     clearInputs();
 
 })
