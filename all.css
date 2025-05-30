@@ -1,0 +1,22 @@
+
+.li-1{ 
+  grid-auto-columns: 2fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 13px 13px; 
+}
+
+.your-text {
+    background: linear-gradient(45deg, #e18e7c, #42647b);   
+         -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.body {   
+ 
+    background: linear-gradient(135deg, #232526, #414345); 
+    text-transform: capitalize;
+}
+
+

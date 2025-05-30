@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/all.min.css">
+</head>
+<body class="body text-light">
+    <div class="container pt-5">
+        <h2 class="text-center mb-4 your-text"> <i class="fa-solid fa-book-bookmark text-light"></i> Bookmark Manager</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control "  id="SiteName" placeholder="Site Name">
+                    <label for="SiteName">Site Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="SiteURL" placeholder="Site URL">
+                    <label for="SiteURL">Site URL</label>
+                </div>
+
+                <div class="d-flex justify-content-center gap-3 mb-5">
+                    <button id="btnadd"  class="btn btn-outline-primary fw-bold">Add Bookmark</button>
+                    <button id="btnUpdate" class="btn btn-outline-danger d-none me-4">Update</button>
+                    <button id="CancelUpdate" class="btn btn-outline-light  d-none">Cancel Update</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 py-3">
+            <div class="w-100  bg-light mb-4 rounded ">
+                <ul class="list-unstyled li-1  d-grid text-center py-3  text-dark">
+                    <li class="fw-bold adres-1">#</li>
+                    <li class="fw-bold adres-2">Website Name</li>
+                    <li class="fw-bold adres-3">Visit</li>
+                    <li class="fw-bold adres-4">Delete</li>
+                    <li class="fw-bold adres-5">Update</li>
+                </ul>
+            </div>
+            
+            <div id="print" class="w-100 "></div>
+        </div>
+    </div>
+
+    <div id="layer" class="d-none position-fixed bottom-0 top-0 start-0 end-0 z-3 bg-dark bg-opacity-50 justify-content-center align-items-center">
+        <div class="bg-white shadow rounded-5 h-25 w-50 text-center d-flex flex-column justify-content-center align-items-center">
+            <h3 class="mb-4">Are you sure you want to delete?</h3>
+            <div class="pt-3">    
+                <button class="btn btn-danger me-4 px-4" id="deleteConfirmed" >Yes</button>
+                <button class="btn btn-outline-dark px-4"id="cancelDelete">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.3.5-dist/js/all.min.js"></script>
+    <script src="./mini.js"></script>
+</body>
+</html>
