@@ -13,10 +13,17 @@
     font-weight: bold;
 }
 
-.body {   
+.bg-darkk{   
  
     background: linear-gradient(135deg, #232526, #414345); 
-    text-transform: capitalize;
+ 
 }
 
 
+
+.text-capitalize{
+
+text-transform: capitalize;
+
+
+}
