@@ -1,4 +1,3 @@
-
 var siteNameInput = document.getElementById("SiteName");
 var siteUrlInput = document.getElementById("SiteURL");
 var printContainer = document.getElementById("print");
@@ -9,6 +8,12 @@ var deleteConfirmed=document.getElementById("deleteConfirmed");
 var btnadd= document.getElementById("btnadd");
 var cancelDelete= document.getElementById("cancelDelete");
 var cancelUpdate= document.getElementById("CancelUpdate");
+var body = document.getElementById("bodyy");
+var Bookmarkk = document.getElementById("Bookmark");
+var sunn = document.getElementById("sunn");
+var moonn = document.getElementById("moonn");
+var uladdres= document.getElementById("uladdres");
+
 var urlList = [];
 
 
@@ -68,7 +73,7 @@ function clearInputs() {
 
 var currentDeleteIndex;
 
-function confirmDelete(index) {
+function confirmDelete(index) {  
     deleteLayer.classList.replace("d-none", "d-flex");
     currentDeleteIndex = index;
 }
@@ -169,3 +174,34 @@ var validURL = /^(https?:\/\/)?([\w\.-]+)\.([a-z]{2,6})(\/[\w\.-]*)*\/?$/i;
         btnadd.disabled=true;
     }
 });
+
+
+
+
+function darky() {
+    if (body.classList.contains("bg-darkk")) {
+        body.classList.replace("bg-darkk", "bg-white");
+        sunn.classList.add("d-none");
+        moonn.classList.remove("d-none");
+        Bookmarkk.classList.replace("text-light", "text-dark");
+        uladdres.classList.replace("bg-light","bg-dark");
+        body.classList.replace("text-dark","text-white");
+        printContainer.classList.replace("text-white" ,"text-dark")
+cancelUpdate.classList.replace("btn-outline-light","btn-outline-dark");
+        console.log(sunn,moonn,Bookmarkk);
+    } else {
+        body.classList.replace("bg-white", "bg-darkk");
+        sunn.classList.remove("d-none");
+        moonn.classList.add("d-none");
+        Bookmarkk.classList.replace("text-dark", "text-light");
+        uladdres.classList.replace("bg-dark","bg-light");
+      body.classList.replace("text-white","text-dark");
+
+        printContainer.classList.replace("text-dark" ,"text-white")
+cancelUpdate.classList.replace("btn-outline-dark","btn-outline-light");
+
+                console.log(sunn,moonn,Bookmarkk);
+
+    }
+}
+
