@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark Manager</title>
-    <link rel="stylesheet" href="./all.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/all.min.css">
+    <link rel="stylesheet" href="./css.css">
+<link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/all.min.css">
+<link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
 </head>
-<body class="body text-light">
+<body id="bodyy" class="bg-darkk text-light text-capitalize text-dark">
     <div class="container pt-5">
-        <h2 class="text-center mb-4 your-text"> <i class="fa-solid fa-book-bookmark text-light"></i> Bookmark Manager</h2>
+        <h2 class="text-center mb-4 your-text"> <i id="Bookmark" class="fa-solid fa-book-bookmark text-light"></i> Bookmark Manager 
+        
+        <button  id="darkk" onclick="darky()" class="btn ">
+                 <i id="sunn" class="fa-solid fa-sun fs-2 text-light"></i>
+            <i id="moonn" class="d-none fa-solid fa-moon fs-2 "></i>
+            </button> 
+        </h2>
 
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -35,8 +42,8 @@
         </div>
 
         <div class="w-100 py-3">
-            <div class="w-100  bg-light mb-4 rounded ">
-                <ul class="list-unstyled li-1  d-grid text-center py-3  text-dark">
+            <div id="uladdres" class="w-100  bg-light mb-4 rounded ">
+                <ul class="list-unstyled li-1  d-grid text-center py-3   ">
                     <li class="fw-bold adres-1">#</li>
                     <li class="fw-bold adres-2">Website Name</li>
                     <li class="fw-bold adres-3">Visit</li>
@@ -45,11 +52,11 @@
                 </ul>
             </div>
             
-            <div id="print" class="w-100 "></div>
+            <div id="print" class="w-100  text-white"></div>
         </div>
     </div>
 
-    <div id="layer" class="d-none position-fixed bottom-0 top-0 start-0 end-0 z-3 bg-dark bg-opacity-50 justify-content-center align-items-center">
+    <div id="layer" class="d-none position-fixed bottom-0 top-0 start-0 end-0 z-3 bg-dark bg-opacity-50 justify-content-center align-items-center ">
         <div class="bg-white shadow rounded-5 h-25 w-50 text-center d-flex flex-column justify-content-center align-items-center">
             <h3 class="mb-4 text-black">Are you sure you want to delete?</h3>
             <div class="pt-3">    
@@ -59,8 +66,9 @@
         </div>
     </div>
 
-    <script src="./bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./bootstrap-5.3.5-dist/js/all.min.js"></script>
-    <script src="./mini.js"></script>
+<script src="./bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="./bootstrap-5.3.5-dist/js/all.min.js"></script> -->
+<script src="./index.js"></script>
+
 </body>
 </html>
